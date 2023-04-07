@@ -5,8 +5,11 @@ on:
   push:
     branches:
       - main
+
 jobs:
   achievements:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
@@ -23,6 +26,8 @@ jobs:
 
   github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -35,6 +40,8 @@ jobs:
 
   acti_comm:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -47,6 +54,8 @@ jobs:
 
   iso_calender:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -61,6 +70,8 @@ jobs:
 
   habits:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -78,6 +89,8 @@ jobs:
 
   issue_pr_lang:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
@@ -92,6 +105,8 @@ jobs:
 
   repositories:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
